@@ -10,12 +10,20 @@ var synth = new Tone.PolySynth(numRows).toMaster();
 var loop;
 
 function Square(props) {
-  var c = "square"
+  var squareClassName = "square"
   if (props.isActive) {
-    c = "square on"
+    squareClassName = "square on"
+  }
+  const squareStyle = {
+    maxWidth: 'calc(100% / 16)',
+    maxHeight: 'calc(100vh / 16)',
   }
   return (
-    <button className={c} onClick={props.onClick}></button>
+    <button 
+      style={squareStyle} 
+      className={squareClassName} 
+      onClick={props.onClick}>
+    </button>
   );
 }
 

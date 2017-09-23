@@ -4,9 +4,7 @@ body {
 }
 
 .board-row {
-  /*margin: auto;*/
   display: table-row;
-  /*background-color: green;*/
 }
 
 /*.board-row:before {
