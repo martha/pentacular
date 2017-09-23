@@ -29,7 +29,7 @@ function Square(props) {
 
 function StartButton(props) {
   return (
-    <button onClick={
+    <button className="btn start" onClick={
       function() {
         console.log('Starting loop');
         if (Tone.Transport.state !== 'started') {
@@ -44,7 +44,7 @@ function StartButton(props) {
 
 function StopButton(props) {
   return (
-    <button onClick={
+    <button className="btn stop" onClick={
       function() {
         console.log('Stopping loop');
         loop.stop();

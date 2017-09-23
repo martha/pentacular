@@ -1,23 +1,13 @@
 body {
   margin: 20px;
   text-align: center;
+  font-family: Helvetica;
+  background-color: #DDE2F0;
 }
 
 .board-row {
   display: table-row;
 }
-
-/*.board-row:before {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.board-row:after {
-  clear: both;
-  content: "";
-  display: table;
-}*/
 
 .pentacular-board {
   margin: auto;
@@ -27,7 +17,7 @@ body {
 
 .square {
   background: #fff;
-  border: 1px solid #999;
+  border: 1px solid #C0C0C0;
   float: left;
   font-size: 24px;
   font-weight: bold;
@@ -38,6 +28,8 @@ body {
   padding: 0;
   text-align: center;
   width: 34px;
+  transition: background-color 0.5s;
+  cursor: pointer;
 }
 
 .square:focus {
@@ -45,9 +37,40 @@ body {
 }
 
 .square.on {
-  background-color: black;
+  background-color: #F87666;
 }
 
 .kbd-navigation .square:focus {
   background: #ddd;
+}
+
+.btn {
+  margin: 24px;
+  padding: 16px 24px;
+  min-width: 150px;
+  border: 0;
+  border-bottom: 4px solid #2C406F;
+  background-color: #4464AD;
+  color: white;
+  border-radius: 5%;
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  cursor: pointer;
+  transition: background-color .5s;
+  -webkit-transition: background-color .5s;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: #2C406F;
+  border-bottom: 4px solid #2C406F;
+}
+
+.btn:select {
+  margin-top: 25px;
+}
+
+.btn:focus {
+  outline: none;
 }
